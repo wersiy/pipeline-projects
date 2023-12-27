@@ -22,7 +22,7 @@
     <module>webapp</module>
   </modules>
 
-  <distributionManagement>
+  <!-- <distributionManagement>
     <site>
       <id>site-server</id>
       <name>Test Project Site</name>
@@ -36,7 +36,7 @@
             <id>nexus</id>
             <url>http://172.31.16.85:8081/repository/maven-project-release/</url>
         </repository>
-  </distributionManagement>
+  </distributionManagement> -->
 
   <build>
     <plugins>
@@ -290,14 +290,12 @@
 	<distributionManagement>
     <snapshotRepository>
       <id>nexusdeploymentrepo</id>
-      <url>http://172.31.11.166:8081/repository/Java-WebApp-Project-Snapshot/</url> <!-- Update the IP/Address to Your Nexus VM IP -->
+      <url>http://172.31.25.24:8081/repository/Java-WebApp-Project-Snapshot/</url> <!-- Update the IP/Address to Your Nexus VM IP -->
     </snapshotRepository>											  <!-- Mmake sure to create the "maven-snapshots" repo in Nexus -->
-	<repository>
+	<releaserepository>
 	  <id>nexusdeploymentrepo</id>
-      <url>http://172.31.11.166:8081/repository/Java-WebApp-Project-Snapshot/</url> <!-- Update the IP/Address to Your Nexus VM IP -->
-    </repository>													 <!-- Also make sure you have the above two or one repositories created -->
-  
-  </distributionManagement>
+      <url>http://172.31.25.24:8081/repository/Java-WebApp-Project-Release/</url> <!-- Update the IP/Address to Your Nexus VM IP -->
+    </releaserepository>													 <!-- Also make sure you have the above two or one repositories created -->
+    </distributionManagement>
 
->>>>>>> 89ae246a6b032dd8d32bc4d5f90b2f88d4e3feda
 </project>
