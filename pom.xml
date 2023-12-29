@@ -63,10 +63,10 @@
       <id>nexusdeploymentrepo</id>
       <url>http://172.31.25.24:8081/repository/Java-WebApp-Project-Snapshot/</url> <!-- Update the IP/Address to Your Nexus VM IP -->
     </snapshotRepository>											  <!-- Mmake sure to create the "maven-snapshots" repo in Nexus -->
-	<releaserepository>
+	<repository>
 	  <id>nexusdeploymentrepo</id>
       <url>http://172.31.25.24:8081/repository/Java-WebApp-Project-Release/</url> <!-- Update the IP/Address to Your Nexus VM IP -->
-    </releaserepository>													 <!-- Also make sure you have the above two or one repositories created -->
+    </repository>													 <!-- Also make sure you have the above two or one repositories created -->
   
   </distributionManagement>
 
